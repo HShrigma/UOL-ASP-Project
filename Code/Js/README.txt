@@ -1,1 +1,0 @@
-This is where the JavaScript for the project goes.
