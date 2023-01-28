@@ -1,0 +1,100 @@
+/*main css-------------------*/
+header {
+  height: 200px;
+  display: inline-flex;
+  align-items: center;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: #f2f2f2;
+}
+
+footer{
+    background: #4d4d4d;
+}
+footer a:hover{
+    color: aqua;
+}
+
+.footer-container{
+    padding: 10px;
+    
+}
+h1{
+    color:red;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.content{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+/*end main css--------------*/
+
+/*menu css------------------------*/
+.nav-container{
+    background: #4d4d4d;
+    height: 50px; 
+}
+.menu-container{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    justify-content: flex-start;
+    align-items: center;
+}
+/*end menu css-----------------*/
+
+
+/*AAA text size. Adapted from this course lesson 14, low level of adaptation----------*/
+.smallText {
+    font-size: 1em;
+}
+#smallA:hover {
+    background: aqua;
+    color: black;
+}
+
+.midText {
+    font-size: 1.4em;
+}
+#midA:hover {
+    background: aqua;
+    color:black;
+}
+
+.bigText {
+    font-size: 1.8em;
+}
+#bigA:hover {    
+    background: aqua;
+    color: black;
+}
+/*End AAA text size --------------------------------------*/
+
+
+/* On smaller screens, decrease text size. Adapted from www.w3schools.com--------- */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+@media only screen and (max-width: 680px) {
+    .news-card{
+        display: flex;
+        flex-direction: column;
+    }
+    .content{
+        padding: 0;
+    }
+}
+
+    
+/*end @media--------------------------------------------------------------*/
+
