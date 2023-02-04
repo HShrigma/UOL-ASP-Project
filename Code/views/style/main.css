@@ -34,6 +34,18 @@ a{
     padding-left: 10%;
     padding-right: 10%;
 }
+
+.menu-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;  
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 1px;
+  }
+  
+  
 /*end main css--------------*/
 
 /*menu css------------------------*/
