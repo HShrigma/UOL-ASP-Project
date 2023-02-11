@@ -25,9 +25,8 @@ footer a:hover{
 h1{
     color:red;
 }
-.donate{
-    color:black;
-}
+
+
 a{
     color: #12e740ab;
     text-decoration: none;
@@ -64,6 +63,7 @@ a{
     margin: 0;
     justify-content: flex-start;
     align-items: center;
+    align-content: center;
 }
 /*end menu css-----------------*/
 
