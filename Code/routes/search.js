@@ -8,4 +8,7 @@ const e = require("express");
 const { exists } = require("fs");
 let objId = 0;
 
+router.get("/",(req,res,next) =>{
+    res.send("Search Page displayed here"); 
+});  
 module.exports = router;
