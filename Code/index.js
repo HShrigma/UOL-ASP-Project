@@ -26,5 +26,5 @@ app.use('/', mainRoutes);
 app.use('/animal', animalRoutes);
 app.use('/search', searchRoutes);
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
+  console.log(`Example app listening on port ${port}`);
 })
