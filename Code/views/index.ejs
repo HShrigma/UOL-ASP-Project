@@ -17,7 +17,9 @@
 <body>
     <div class="content">   
         <div class="donate">
-            <a href="donation.html">Donate</a>
+            <form method = "get" action = "/donate">
+                <button type="submit">Donate</button>
+            </form>
         </div>
         <div class="logo">
             <img src="assets/img/logo.jpg" style="width:10%">
@@ -30,11 +32,21 @@
             <div class="menu-container">
                 
 
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="dogs.html">Dogs</a>
-                <a href="other.html">Other</a>
-                <a href="cats.html">Cats</a>
+                <form method = "get" action = "/">
+                    <button type="submit">Home</button>
+                </form>
+                <form method = "get" action = "/about">
+                    <button type="submit">About</button>
+                </form>
+                <form method = "get" action = "/animal/dogs">
+                    <button type="submit">Dogs</button>
+                </form>
+                <form method = "get" action = "/animal/cats">
+                    <button type="submit">Cats</button>
+                </form>
+                <form method = "get" action = "/animal/other">
+                    <button type="submit">Other</button>
+                </form>
 
                 <ul>
                 <li>Telef: 000 00 000 00 00 1112</li>

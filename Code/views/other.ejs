@@ -10,17 +10,19 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       
       <!-- Links to files -->
-      <link rel="stylesheet" href="style/main.css">
+      <link rel="stylesheet" href="../style/main.css">
      
 </head>
 
 <body>
     <div class="content">   
         <div class="donate">
-            <a href="donation.html">Donate</a>
+            <form method = "get" action = "/donate">
+                <button type="submit">Donate</button>
+            </form>
         </div>
         <div class="logo">
-            <img src="assets/img/logo.jpg" style="width:10%">
+            <img src="../assets/img/logo.jpg" style="width:10%">
         </div>
         <div class="title">
             
@@ -29,12 +31,21 @@
         <nav class="nav-container">
             <div class="menu-container">
                 
-
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="dogs.html">Dogs</a>
-                <a href="other.html">Other</a>
-                <a href="cats.html">Cats</a>
+                <form method = "get" action = "/">
+                    <button type="submit">Home</button>
+                </form>
+                <form method = "get" action = "/about">
+                    <button type="submit">About</button>
+                </form>
+                <form method = "get" action = "/animal/dogs">
+                    <button type="submit">Dogs</button>
+                </form>
+                <form method = "get" action = "/animal/cats">
+                    <button type="submit">Cats</button>
+                </form>
+                <form method = "get" action = "/animal/other">
+                    <button type="submit">Other</button>
+                </form>
 
                 <ul>
                 <li>Telef: 000 00 000 00 00 1112</li>
@@ -73,10 +84,10 @@
         
         <!--photos from: https://www.goodhousekeeping.com -->
         <div class="slideshow-container">
-            <img src="assets/img/dog1slides.jpg" class="dogslides slide-image" alt="slider photo1">
-            <img src="assets/img/dog2slides.jpg" class="dogslides slide-image" alt="slider photo2">
-            <img src="assets/img/dog3slides.jpg" class="dogslides slide-image" alt="slider photo3">
-            <img src="assets/img/dog4slides.jpg" class="dogslides slide-image" alt="slider photo4">
+            <img src="../assets/img/dog1slides.jpg" class="dogslides slide-image" alt="slider photo1">
+            <img src="../assets/img/dog2slides.jpg" class="dogslides slide-image" alt="slider photo2">
+            <img src="../assets/img/dog3slides.jpg" class="dogslides slide-image" alt="slider photo3">
+            <img src="../assets/img/dog4slides.jpg" class="dogslides slide-image" alt="slider photo4">
         </div>
 
 
