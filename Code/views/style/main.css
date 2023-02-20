@@ -44,6 +44,10 @@ a{
     background: #038C8C;
     height: 50px; 
 }
+
+.title-banner{
+    color: white;
+}
 .menu-container{
     display: flex;
     flex-direction: row;
