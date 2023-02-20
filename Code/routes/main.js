@@ -9,7 +9,10 @@ const { exists } = require("fs");
 let objId = 0;
 
 router.get("/",(req,res,next) =>{
-      res.render("index"); 
+    var testStr = "Testing 123";
+      res.render("index",{
+        phoneNum: testStr
+      }); 
 });  
  
 router.get("/about",( req,res,next) =>{
