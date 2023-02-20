@@ -1,18 +1,27 @@
 /*main css-------------------*/
-header {
-  height: 200px;
-  display: inline-flex;
-  align-items: center;
-}
 
+/*Palette: 
+Purple for catching attention - #593954 
+darker blues for background - #013440, #026873 
+Content Background greens/cyans - #038C8C, #038C7F
+(most)Text - #FFFFFF*/
+
+/*General: Header, Footer, body, etc. -------------*/
 body{
     margin: 0;
     padding: 0;
-    background: #f2f2f2;
+    background: #013440;
 }
 
+header {
+    height: 200px;
+    display: inline-flex;
+    align-items: center;
+  }
+  
+
 footer{
-    background: #4d4d4d;
+    background: #026873;
 }
 footer a:hover{
     color: aqua;
@@ -22,80 +31,74 @@ footer a:hover{
     padding: 10px;
     
 }
-h1{
-    color:red;
-}
-
 
 a{
     color: #12e740ab;
     text-decoration: none;
 }
+/*end General----------*/
 
-.content{
-    padding-left: 10%;
-    padding-right: 10%;
-}
 
-.menu-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;  
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 20px;
-    margin-bottom: 1px;
-    align-items: center;
-    align-content: center;
-  }
-  
-  
-/*end main css--------------*/
-
-/*menu css------------------------*/
+/*Navigation Menu-------------*/
 .nav-container{
-    background: #4d4d4d;
+    background: #038C8C;
     height: 50px; 
 }
 .menu-container{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+
     height: 100%;
     padding: 0;
     margin: 0;
+    margin-top: 20px;
+    margin-bottom: 1px;
     justify-content: flex-start;
     align-items: center;
     align-content: center;
+    gap: 10px;  
 }
-/*end menu css-----------------*/
+/*end Navigation Menu---------*/
+
+/*Content-specific classes*/
+.content{
+    padding-left: 10%;
+    padding-right: 10%;
+}
 
 
-/*AAA text size. Adapted from this course lesson 14, low level of adaptation----------*/
-.smallText {
-    font-size: 1em;
-}
-#smallA:hover {
-    background: aqua;
-    color: black;
-}
+/*  AAA text size. 
+    Adapted from this course lesson 14, low level of adaptation----------*/
+    .smallText {
+        font-size: 1em;
+    }
+    #smallA:hover {
+        background: aqua;
+        color: black;
+    }
 
-.midText {
-    font-size: 1.4em;
-}
-#midA:hover {
-    background: aqua;
-    color:black;
-}
+    .midText {
+        font-size: 1.4em;
+    }
+    #midA:hover {
+        background: aqua;
+        color:black;
+    }
 
-.bigText {
-    font-size: 1.8em;
-}
-#bigA:hover {    
-    background: aqua;
-    color: black;
-}
-/*End AAA text size --------------------------------------*/
+    .bigText {
+        font-size: 1.8em;
+    }
+    #bigA:hover {    
+        background: aqua;
+        color: black;
+    }
+/*  End AAA text size --------------------------------------*/
+/*end Content-specific classes*/
 
+/*Unique ids*/
+/*end Unique ids*/
+/*end main css--------------*/
 
 /* On smaller screens, decrease text size. Adapted from www.w3schools.com--------- */
 @media only screen and (max-width: 300px) {
