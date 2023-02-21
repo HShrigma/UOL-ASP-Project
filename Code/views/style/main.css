@@ -53,6 +53,8 @@ a {
 }
 
 /*Title Row*/
+
+
 .title-row {
     display: flex;
     flex-direction: row;
@@ -67,7 +69,7 @@ a {
 }
 
 .donate>form>button{
-    color: red;
+
 } 
 .menu-container {
     display: flex;
