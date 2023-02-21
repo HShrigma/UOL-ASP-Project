@@ -9,6 +9,6 @@ const { exists } = require("fs");
 let objId = 0;
 
 router.get("/",(req,res,next) =>{
-    res.send("Search Page displayed here"); 
+    res.render("search");
 });  
 module.exports = router;
