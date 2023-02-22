@@ -20,6 +20,7 @@ router.get("/other",(req,res,next) =>{
   res.render("other"); 
 });    
 
+
 router.get("/",(req,res,next) =>{
   res.send("Animal specific page");
 });
