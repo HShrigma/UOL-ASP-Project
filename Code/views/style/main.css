@@ -153,6 +153,33 @@ nav>form>button:hover{
 }
 /*end Navigation menu*/
 
+/*Search bar--------------*/
+.search{
+    padding: 2vmin;
+}
+.search>input{
+    width: 85%;
+    border-radius: 12px;
+    border-style: solid;
+    border-color: #038C8C;
+    border-width: 6px;
+}
+.search>button{
+    width: 5%;
+    border-radius: 12px;
+    border-style: solid;
+    border-color: #038C8C;
+    border-width: 6px;
+}
+.search>button:hover{
+    background-color: #038C7F;
+}
+.search>button>img{
+    width: 1vmin;
+    max-width: 100%;
+    filter: invert(21%) sepia(3%) saturate(6707%) hue-rotate(258deg) brightness(102%) contrast(85%);
+}
+/*end Search bar----------*/
 /*Content-specific classes*/
 /*  AAA text size. 
     Adapted from this course lesson 14, low level of adaptation----------*/

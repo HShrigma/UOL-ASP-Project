@@ -1,95 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-      <!-- meta data -->
-      <title>Team 70, Ukraine pet adopt</title>
-      <meta charset="UTF-8">
-      <meta name="author" content="arina, hristo, alfonso">
-      <meta name="content" content="ukraine pet adopt, about, dogs, other cats">
-      <meta name="keywords" content="ukraine pet adoption, pet adoption, family for dogs">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      
-      <!-- Links to files -->
-      <link rel="stylesheet" href="style/main.css">
-     
+    <!-- meta data -->
+    <title>Team 70, Ukraine pet adopt</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="arina, hristo, alfonso">
+    <meta name="content" content="ukraine pet adopt, about, dogs, other cats">
+    <meta name="keywords" content="ukraine pet adoption, pet adoption, family for dogs">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Links to files -->
+    <link rel="stylesheet" href="style/main.css">
+
 </head>
 
 <body>
-    <div class="content">   
+    <header>
         <div class="donate">
-            <form method = "get" action = "/donate">
+            <form method="get" action="/donate">
                 <button type="submit">Donate</button>
             </form>
         </div>
-        <div class="logo">
-            <img src="assets/PNG/Logo.png" style="width:10%">
-        </div>
-        <div class="title">
-            
-        </div>
-         <!-- navigation to pages -->
-        <nav class="nav-container">
-            <div class="menu-container">
-                
-                <form method = "get" action = "/">
-                    <button type="submit">Home</button>
-                </form>
-                <form method = "get" action = "/about">
-                    <button type="submit">About</button>
-                </form>
-                <form method = "get" action = "/animal/dogs">
-                    <button type="submit">Dogs</button>
-                </form>
-                <form method = "get" action = "/animal/cats">
-                    <button type="submit">Cats</button>
-                </form>
-                <form method = "get" action = "/animal/other">
-                    <button type="submit">Other</button>
-                </form>
 
-                <ul>
-                <li>Telef: 000 00 000 00 00 1112</li>
+        <div class="title-row">
+            <img class="logo" src="assets/PNG/Logo.png">
+            <h1>Brave Shelter</h1>
+            <ul>
+                <li>Telef:
+                </li>
                 <li>Instagram</li>
-                <li>Facebook<li> 
-                </ul>
-
-     
-            </div>
-                   
-        </nav>      
-      
-
-        <!--page content -->
-        
-        <div class="search bar">
-            <input type="text" placeholder="Search..">
-            <button type="submit"><i class="fa fa-search"></i></button>
+                <li>Facebook</li>
+            </ul>
         </div>
-        
-        
-       
-        
-        
-        <div class="donate">
-            <p><h2>Donate<h2>
+    </header>
+
+    <nav>
+        <form method="get" action="/">
+            <button type="submit">Home</button>
+        </form>
+        <form method="get" action="/about">
+            <button type="submit">About</button>
+        </form>
+        <form method="get" action="/animal/dogs">
+            <button type="submit">Dogs</button>
+        </form>
+        <form method="get" action="/animal/cats">
+            <button type="submit">Cats</button>
+        </form>
+        <form method="get" action="/animal/other">
+            <button type="submit">Other</button>
+        </form>
+    </nav>
+    
+    <!--Search Bar-->
+    <form method="get" action="/search" class="search">
+        <input type="text" placeholder="Search..." name="search">
+        <button type="submit"><img src="assets/icons/search.png"></button>
+    </form>
+    <!--page content -->
+
+
+    <div class="donate">
+        <p>
+        <h2>Donate<h2>
                 <table>
                     <tr>
                         <td>Donation 1</td>
                         <td>You contribute with 2 euros per month</td>
                         <td>2 eur</td>
-                    </tr>                
-                        
+                    </tr>
 
 
 
-        </div>
-      
 
-         <!-- sliders -->
-        
-  
-        
-        
+    </div>
+
+
+    <!-- sliders -->
+
+
+
+
     <!--footer-->
     <footer>
         <div class="footer-container">
@@ -97,14 +89,11 @@
             <a href="#">Subscribe</a><br>
             <a href="#">Contact</a><br>
             <h4>Copyright information</h4><br>
-        </div>          
+        </div>
     </footer>
-    </div>
+    <!--execute code after loading objects-->
+    <!--<script src="js/home.js"></script>-->
 
-<!--execute code after loading objects-->
-<!--<script src="js/home.js"></script>-->
-    
-</body>    
+</body>
 
-</html> 
-    
+</html>

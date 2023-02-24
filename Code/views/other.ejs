@@ -15,61 +15,51 @@
 </head>
 
 <body>
-    <div class="content">   
+    <header>
         <div class="donate">
-            <form method = "get" action = "/donate">
+            <form method="get" action="/donate">
                 <button type="submit">Donate</button>
             </form>
         </div>
-        <div class="logo">
-            <img src="../assets/PNG/Logo.png" style="width:10%">
-        </div>
-        <div class="title">
-            
-        </div>
-         <!-- navigation to pages -->
-        <nav class="nav-container">
-            <div class="menu-container">
-                
-                <form method = "get" action = "/">
-                    <button type="submit">Home</button>
-                </form>
-                <form method = "get" action = "/about">
-                    <button type="submit">About</button>
-                </form>
-                <form method = "get" action = "/animal/dogs">
-                    <button type="submit">Dogs</button>
-                </form>
-                <form method = "get" action = "/animal/cats">
-                    <button type="submit">Cats</button>
-                </form>
-                <form method = "get" action = "/animal/other">
-                    <button type="submit">Other</button>
-                </form>
 
+        <div class="title-row">
+                <img class = "logo" src="../assets/PNG/Logo.png">
+                <h1>Brave Shelter</h1>
                 <ul>
-                <li>Telef: 000 00 000 00 00 1112</li>
-                <li>Instagram</li>
-                <li>Facebook<li> 
+                    <li>Telef: 
+                    </li>
+                    <li>Instagram</li>
+                    <li>Facebook</li>
                 </ul>
+        </div>
+    </header>
 
-     
-            </div>
-                   
-        </nav>      
+    <nav>
+            <form method="get" action="/">
+                <button type="submit">Home</button>
+            </form>
+            <form method="get" action="/about">
+                <button type="submit">About</button>
+            </form>
+            <form method="get" action="/animal/dogs">
+                <button type="submit">Dogs</button>
+            </form>
+            <form method="get" action="/animal/cats">
+                <button type="submit">Cats</button>
+            </form>
+            <form method="get" action="/animal/other">
+                <button type="submit">Other</button>
+            </form>
+    </nav>   
       
+        <!--Search Bar-->
+        
+        <form method="get" action="/search" class="search">
+            <input type="text" placeholder="Search..." name="search">
+            <button type="submit"><img src="../assets/icons/search.png"></button>
+        </form>
 
         <!--page content -->
-        
-        <div class="search bar">
-            <input type="text" placeholder="Search..">
-            <button type="submit"><i class="fa fa-search"></i></button>
-        </div>
-        
-        
-       
-        
-        
         <div class="other">
             <p><h2>Other<h2>
                 <span>    
@@ -100,8 +90,6 @@
             <h4>Copyright information</h4><br>
         </div>          
     </footer>
-    </div>
-
 <!--execute code after loading objects-->
 <!--<script src="js/home.js"></script>-->
     
