@@ -26,4 +26,8 @@ router.get("/donate",(req,res,next) =>{
 router.get("/adopt",(req,res,next) =>{
     res.render("adopt"); 
 });
+
+router.get("/article",(req,res,next)=>{
+    res.render("article");
+});
 module.exports = router;
