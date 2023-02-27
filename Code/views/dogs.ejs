@@ -52,7 +52,7 @@
             <button type="submit">Other</button>
         </form>
     </nav>
-    
+
     <!--Search Bar-->
 
     <form method="get" action="/search" class="search">
@@ -61,26 +61,40 @@
     </form>
 
     <!--page content -->
-    <div class="dogs">
-        <p>
-        <h2>Dogs<h2>
-                <span>
-                    Dogs are the favourite type of pet. We have lots of them waiting for an adoption family.
-                    Please browse our database and set an interview width one of our agents.
-                </span>
+    <div class="pet-preview">
+        <ul>
+            <li>
+                <ul>
+                    <li>
+                        <h3>PetName</h3>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="../assets/img/dog1slides.jpg" alt="dogImage">
+                            <ul>
+                                <li>Age:</li>
+                                <li>Weight:</li>
+                                <li>Status:</li>
+                                <li class="petcontent">
+                                    Latest Update:
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae possimus
+                                        eius exercitationem cumque eligendi doloremque. Molestias repellendus voluptates
+                                        labore voluptatem reiciendis et non fuga. Facilis dolor ipsam molestiae
+                                        perspiciatis sit.</p>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </li>
+                    <li>
+                        <form method="get" action="/adopt" class="adopt">
+                            <button type="submit">Adopt PetName</button>
+                        </form>
+                    </li>
+                </ul>
+            </li>
+        </ul>
     </div>
-
-
-    
-
-    <!--photos from: https://www.goodhousekeeping.com -->
-    <div class="slideshow-container">
-        <img src="../assets/img/dog1slides.jpg" class="dogslides slide-image" alt="slider photo1">
-        <img src="../assets/img/dog2slides.jpg" class="dogslides slide-image" alt="slider photo2">
-        <img src="../assets/img/dog3slides.jpg" class="dogslides slide-image" alt="slider photo3">
-        <img src="../assets/img/dog4slides.jpg" class="dogslides slide-image" alt="slider photo4">
-    </div>
-
 
 
     <!--footer-->
@@ -98,8 +112,8 @@
             </li>
         </ul>
     </footer>
-   
-   
+
+
 
 </body>
 

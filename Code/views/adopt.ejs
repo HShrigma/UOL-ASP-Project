@@ -16,91 +16,165 @@
 </head>
 
 <body>
-    <div class="adopt">
-        <header>
-            <div class="donate">
-                <form method="get" action="/donate">
-                    <button type="submit">Donate</button>
-                </form>
-            </div>
-
-            <div class="title-row">
-                <img class="logo" src="assets/PNG/Logo.png">
-                <h1>Brave Shelter</h1>
-                <ul>
-                    <li>Telef:
-                    </li>
-                    <li>Instagram</li>
-                    <li>Facebook</li>
-                </ul>
-            </div>
-        </header>
-
-        <nav>
-            <form method="get" action="/">
-                <button type="submit">Home</button>
+    <header>
+        <div class="donate">
+            <form method="get" action="/donate">
+                <button type="submit">Donate</button>
             </form>
-            <form method="get" action="/about">
-                <button type="submit">About</button>
-            </form>
-            <form method="get" action="/animal/dogs">
-                <button type="submit">Dogs</button>
-            </form>
-            <form method="get" action="/animal/cats">
-                <button type="submit">Cats</button>
-            </form>
-            <form method="get" action="/animal/other">
-                <button type="submit">Other</button>
-            </form>
-        </nav>
-        <!--Search Bar-->
-        <form method="get" action="/search" class="search">
-            <input type="text" placeholder="Search..." name="search">
-            <button type="submit"><img src="assets/icons/search.png"></button>
-        </form>
-
-        <!--page content -->
-
-        <div class="dogs">
-            <p>
-            <h2>Dogs<h2>
-                    <span>
-                        Dogs are the favourite type of pet. We have lots of them waiting for an adoption family.
-                        Please browse our database and set an interview width one of our agents.
-                    </span>
         </div>
 
-
-        
-
-        <!--photos from: https://www.goodhousekeeping.com -->
-        <div class="slideshow-container">
-            <img src="assets/img/dog1slides.jpg" class="dogslides slide-image" alt="slider photo1">
-            <img src="assets/img/dog2slides.jpg" class="dogslides slide-image" alt="slider photo2">
-            <img src="assets/img/dog3slides.jpg" class="dogslides slide-image" alt="slider photo3">
-            <img src="assets/img/dog4slides.jpg" class="dogslides slide-image" alt="slider photo4">
-        </div>
-
-
-
-        <!--footer-->
-        <footer>
+        <div class="title-row">
             <img class="logo" src="assets/PNG/Logo.png">
             <h1>Brave Shelter</h1>
-            <p>Copyright information</p>
             <ul>
-                <li> <a href="#">Waiver</a>
+                <li>Telef:
                 </li>
-                <li>
-                    <a href="#">Subscribe</a>
-                </li>
-                <li> <a href="#">Contact</a>
-                </li>
+                <li>Instagram</li>
+                <li>Facebook</li>
             </ul>
-        </footer>
+        </div>
+    </header>
 
-       
-       
+    <nav>
+        <form method="get" action="/">
+            <button type="submit">Home</button>
+        </form>
+        <form method="get" action="/about">
+            <button type="submit">About</button>
+        </form>
+        <form method="get" action="/animal/dogs">
+            <button type="submit">Dogs</button>
+        </form>
+        <form method="get" action="/animal/cats">
+            <button type="submit">Cats</button>
+        </form>
+        <form method="get" action="/animal/other">
+            <button type="submit">Other</button>
+        </form>
+    </nav>
+    <!--Search Bar-->
+    <form method="get" action="/search" class="search">
+        <input type="text" placeholder="Search..." name="search">
+        <button type="submit"><img src="assets/icons/search.png"></button>
+    </form>
+
+    <!--page content -->
+
+    <div class="pet-preview">
+        <ul>
+            <li>
+                <ul>
+                    <li>
+                        <h3>PetName</h3>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="../assets/img/dog1slides.jpg" alt="dogImage">
+                            <ul>
+                                <li>Age:</li>
+                                <li>Weight:</li>
+                                <li>Status:</li>
+                                <li class="petcontent">
+                                    Latest Update:
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae possimus
+                                        eius exercitationem cumque eligendi doloremque. Molestias repellendus voluptates
+                                        labore voluptatem reiciendis et non fuga. Facilis dolor ipsam molestiae
+                                        perspiciatis sit.</p>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="articles">
+        <ul>
+            <li>
+                <ul>
+                    <li class="article-title"> Title
+                    </li>
+                    <li>
+                        <div class="article-content">
+                            <img src="assets/img/dog1slides.jpg">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut cupiditate a sapiente veniam
+                                minus<br>
+                                iste delectus repellat tenetur ad quos, quisquam accusantium exercitationem ea id,
+                                laborum eius
+                                laudantium molestiae enim. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                <br>Qui,
+                                assumenda perspiciatis nostrum tempora reiciendis iusto sit velit maxime harum, quaerat
+                                officiis
+                                distinctio?<br> Laboriosam rem aliquam dicta quaerat excepturi, suscipit nemo. Lorem
+                                ipsum
+                                dolor sit
+                                amet consectetur adipisicing elit.<br> Provident pariatur deserunt soluta error ratione
+                                id
+                                quos
+                                deleniti non sunt reprehenderit ab, neque reiciendis eius quidem incidunt, molestiae
+                                quia
+                                sapiente ex.<br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+                                deserunt,
+                                rem
+                                assumenda dicta vel fugiat odit earum, porro dolor tempore, enim quisquam pariatur quam
+                                sit
+                                quidem repellat natus eaque incidunt! Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit.<br>
+                                Excepturi, expedita? Natus nihil suscipit iste quidem veritatis earum vero architecto id
+                                modi
+                                quibusdam temporibus optio, ratione ea quisquam eius totam at?
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <form method="get" action="/article">
+                            <button type="submit"> Read More </button>
+                        </form>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div >
+        <form method="post" action="/adopt" class="adopt">
+            <div>
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first-name" placeholder="Enter your first name">
+            </div>
+            <div>
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name" placeholder="Enter your last name">
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="Enter your email">
+            </div>
+            <div>
+                <button type="submit"> Send</button>
+            </div>
+        </form>
+    </div>
+    <!--footer-->
+    <footer>
+        <img class="logo" src="assets/PNG/Logo.png">
+        <h1>Brave Shelter</h1>
+        <p>Copyright information</p>
+        <ul>
+            <li> <a href="#">Waiver</a>
+            </li>
+            <li>
+                <a href="#">Subscribe</a>
+            </li>
+            <li> <a href="#">Contact</a>
+            </li>
+        </ul>
+    </footer>
+
+
+
 
 </body>
 

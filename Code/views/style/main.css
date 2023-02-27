@@ -233,18 +233,17 @@ footer>ul>li>a:hover {
 /*  AAA text size. 
     Adapted from this course lesson 14, low level of adaptation----------*/
 /*Articles--------------------*/
-.articles {
-    padding: 5vmin;
-}
 
 .articles>ul {
     list-style-type: none;
+    padding: 0px;
 }
 .articles>ul>li{
     margin-bottom: 5vmin;
 }
 .articles>ul>li>ul {
     list-style-type: none;
+    padding: 0px;
 }
 
 .articles>ul>li>ul>li.article-title {
@@ -264,29 +263,30 @@ footer>ul>li>a:hover {
     color: #FFFFFF;
     border-radius: 1vmin;
     text-align: center;
-
+    align-content: center;
 }
 
 .articles>ul>li>ul>li>.article-content>img {
     display: inline-block;
     border-radius: 100%;
-    width: 500px;
-    height: 500px;
-    padding: 2vmin;
+    width: 40%;
+    height: 40%;
+    max-width: 500px;
+    max-height: 500px;
+    margin: 2vmin;
 }
 
 .articles>ul>li>ul>li>.article-content>p {
     display: inline-block;
-    font-size: 150%;
+    font-size: 100%;
 }
 
 .articles>ul>li>ul>li>form>button {
 
-    font-size: 2vmin;
+    font-size: 100%;
 
-    padding-left: 48%;
-    padding-right: 48%;
-    border-width: .3vmin;
+    width: 100%;
+    border-width: 5%;
     border-radius: 1vmin;
     border-style: solid;
     border-color: #FFFFFF;
@@ -299,7 +299,78 @@ footer>ul>li>a:hover {
     background-color: #038C7F;
 }
 /*end Articles----------------*/
-
+/*Pets------------------------*/
+.pet-preview>ul{
+    list-style-type: none;
+    padding: 0px;
+}
+.pet-preview>ul>li>ul{
+    background-color: #026873;
+    margin-bottom: 3vmin;
+    margin-right: 4vmin;
+    padding: 0px;
+    border-radius: 1vmin;
+    list-style: none;
+}
+.pet-preview>ul>li>ul>li>h3{
+    background-color: #593954;
+    padding-top: 1vmin;
+    padding-bottom: 1vmin;
+    text-indent: 10px;
+    border-radius: 1vmin;
+}
+.pet-preview>ul>li>ul>li>div{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    padding: 2vmin;
+    gap: 10%;
+}
+.pet-preview>ul>li>ul>li>div>img{
+    border-radius: 100%;
+    width: 40%;
+    height: 40%;
+    max-width: 500px;
+    max-height: 500px;
+    margin: 2vmin;
+}
+.pet-preview>ul>li>ul>li>div>ul{
+    max-width: 40%;
+    padding: 0px;
+}
+.pet-preview>ul>li>ul>li>div>ul>*{
+    font-size: 100%;
+}
+.pet-preview>ul>li>ul>li>div>form{
+    text-align: center;
+    
+}
+.pet-preview>ul>li>ul>li>form>button{
+    width: 100%;
+    background-color: #593954;
+    color: #FFFFFF;
+    border-style: solid;
+    border-color: #FFFFFF;
+    border-radius: 1vmin;
+    border-width: 5%;
+    align-self: center;
+    font-size: 100%;
+    font-weight: bold;
+}
+.pet-preview>ul>li>ul>li>form>button:hover{
+    background-color: #038C7F;
+}
+/*end Pets--------------------*/
+/*Adopt-----------------------*/
+.adopt{
+    display:flex;
+    flex-direction: row;
+    gap: 1vmin;
+}
+.adopt>*{
+    flex: 1 1 auto;
+}
+/*end Adopt-------------------*/
 .smallText {
     font-size: 1em;
 }

@@ -30,4 +30,9 @@ router.get("/adopt",(req,res,next) =>{
 router.get("/article",(req,res,next)=>{
     res.render("article");
 });
+
+router.post("/adopt",(req,res,next)=>{
+  res.send("adopt");
+});
+
 module.exports = router;
