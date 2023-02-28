@@ -22,7 +22,9 @@ router.get("/about",( req,res,next) =>{
 router.get("/donate",(req,res,next) =>{
     res.render("donation"); 
 });    
-
+router.post("/donate",(req,res,next) =>{
+  res.render("donation"); 
+});
 router.get("/adopt",(req,res,next) =>{
     res.render("adopt"); 
 });

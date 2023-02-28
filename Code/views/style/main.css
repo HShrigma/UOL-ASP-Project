@@ -238,9 +238,11 @@ footer>ul>li>a:hover {
     list-style-type: none;
     padding: 0px;
 }
-.articles>ul>li{
+
+.articles>ul>li {
     margin-bottom: 5vmin;
 }
+
 .articles>ul>li>ul {
     list-style-type: none;
     padding: 0px;
@@ -291,20 +293,23 @@ footer>ul>li>a:hover {
     border-style: solid;
     border-color: #FFFFFF;
     background-color: #593954;
-    
+
     color: #FFFFFF;
     text-align: center;
 }
-.articles>ul>li>ul>li>form>button:hover{
+
+.articles>ul>li>ul>li>form>button:hover {
     background-color: #038C7F;
 }
+
 /*end Articles----------------*/
 /*Pets------------------------*/
-.pet-preview>ul{
+.pet-preview>ul {
     list-style-type: none;
     padding: 0px;
 }
-.pet-preview>ul>li>ul{
+
+.pet-preview>ul>li>ul {
     background-color: #026873;
     margin-bottom: 3vmin;
     margin-right: 4vmin;
@@ -312,21 +317,24 @@ footer>ul>li>a:hover {
     border-radius: 1vmin;
     list-style: none;
 }
-.pet-preview>ul>li>ul>li>h3{
+
+.pet-preview>ul>li>ul>li>h3 {
     background-color: #593954;
     padding-top: 1vmin;
     padding-bottom: 1vmin;
     text-indent: 10px;
     border-radius: 1vmin;
 }
-.pet-preview>ul>li>ul>li>div{
+
+.pet-preview>ul>li>ul>li>div {
     display: flex;
     flex-direction: row;
     align-content: center;
     padding: 2vmin;
     gap: 10%;
 }
-.pet-preview>ul>li>ul>li>div>img{
+
+.pet-preview>ul>li>ul>li>div>img {
     border-radius: 100%;
     width: 40%;
     height: 40%;
@@ -334,18 +342,22 @@ footer>ul>li>a:hover {
     max-height: 500px;
     margin: 2vmin;
 }
-.pet-preview>ul>li>ul>li>div>ul{
+
+.pet-preview>ul>li>ul>li>div>ul {
     max-width: 40%;
     padding: 0px;
 }
-.pet-preview>ul>li>ul>li>div>ul>*{
+
+.pet-preview>ul>li>ul>li>div>ul>* {
     font-size: 100%;
 }
-.pet-preview>ul>li>ul>li>div>form{
+
+.pet-preview>ul>li>ul>li>div>form {
     text-align: center;
-    
+
 }
-.pet-preview>ul>li>ul>li>form>button{
+
+.pet-preview>ul>li>ul>li>form>button {
     width: 100%;
     background-color: #593954;
     color: #FFFFFF;
@@ -357,32 +369,37 @@ footer>ul>li>a:hover {
     font-size: 100%;
     font-weight: bold;
 }
-.pet-preview>ul>li>ul>li>form>button:hover{
+
+.pet-preview>ul>li>ul>li>form>button:hover {
     background-color: #038C7F;
 }
+
 /*end Pets--------------------*/
 /*Adopt-----------------------*/
-.adopt-headline{
-    margin:2vmin;
+.adopt-headline {
+    margin: 2vmin;
     text-align: center;
     letter-spacing: .1vmin;
     background-color: #593954;
     border-radius: 1vmin;
 }
-.adopt{
-    display:flex;
+
+.adopt {
+    display: flex;
     flex-direction: row;
     gap: 1vmin;
-    margin:3vmin;
+    margin: 3vmin;
     padding-top: 2vmin;
     padding-bottom: 2vmin;
     background-color: #026873;
     border-radius: 1vmin;
 }
-.adopt>*{
+
+.adopt>* {
     flex: 1 1 auto;
 }
-.adopt>div{
+
+.adopt>div {
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -390,10 +407,12 @@ footer>ul>li>a:hover {
     width: 25%;
     margin: 0.5vmin;
 }
-.adopt>div>label{
+
+.adopt>div>label {
     font-weight: bold;
 }
-.adopt>div>input{
+
+.adopt>div>input {
     font-weight: bold;
     border-radius: 1vmin;
     border-style: solid;
@@ -402,10 +421,12 @@ footer>ul>li>a:hover {
     font-size: 100%;
     color: gray;
 }
-.adopt>div>input:focus{
+
+.adopt>div>input:focus {
     border-color: #593954;
 }
-.adopt>div>button{
+
+.adopt>div>button {
     font-weight: bold;
     border-radius: 1vmin;
     border-style: solid;
@@ -415,10 +436,96 @@ footer>ul>li>a:hover {
     background-color: #593954;
     color: #FFFFFF;
 }
-.adopt>div>button:hover{
+
+.adopt>div>button:hover {
     background-color: #038C7F;
 }
+
 /*end Adopt-------------------*/
+/*Donate-----------------------*/
+.donate-headline {
+    color: #FFFFFF;
+    background-color: #593954;
+
+    width: 30%;
+    border-radius: 1vmin;
+    padding: 0.1%;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2vmin;
+    text-align: center;
+
+    font-size: 100%;
+}
+
+.donate-table {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3vmin;
+
+    border-radius: 1vmin;
+    border-collapse: collapse;
+
+    background-color: #038C8C;
+    text-align: center;
+
+}
+
+.donate-table>thead {
+    background-color: #013440;
+}
+
+.donate-table>thead>tr {
+    border-bottom: solid;
+    border-color: #FFFFFF;
+
+}
+
+.donate-table>thead>tr>th,
+.donate-table>tbody>tr>td {
+    padding: 1em;
+}
+
+.donate-table>tbody {
+    border-radius: inherit;
+}
+
+.donate-table>tbody>tr {
+    border-radius: inherit;
+}
+
+.tint,
+.tint-last-tier {
+    background-color: #026873;
+}
+.tint-last-tier{
+    border-bottom-left-radius: inherit;
+}
+#donate-button{
+    padding: 0%;
+    height: inherit;
+}
+#donate-button>form{
+    height:100%;
+}
+#donate-button>form>button{
+    margin: 0px;
+    padding:1em;
+    height:100%;
+    text-align: center;
+    border-radius: 1vmin;
+    border-style: solid;
+    border-color: #FFFFFF;
+    background-color: #593954;
+    color: #FFFFFF;
+    border-width: 0.1em;
+}
+#donate-button>form>button:hover{
+    background-color: #038C7F;
+}
+/*end Donate-------------------*/
+
 .smallText {
     font-size: 1em;
 }

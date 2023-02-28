@@ -59,31 +59,39 @@
         <button type="submit"><img src="assets/icons/search.png"></button>
     </form>
     <!--page content -->
-
-
-    <div class="donate">
-        <p>
-        <h2>Donate<h2>
-                <table>
-                    <tr>
-                        <td>Donation 1</td>
-                        <td>You contribute with 2 euros per month</td>
-                        <td>2 eur</td>
-                    </tr>
-
-
-
-
+    <div class="donate-headline">
+        <h3>Donation Tiers</h3>
     </div>
-
-
-    
-
-
-
-
+    <table class="donate-table">
+        <thead>
+            <tr>
+                <th>Tier</th>
+                <th>Benefits</th>
+                <th>Price</th>
+                <th>Donate</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="tint">Tier 1</td>
+                <td >You get a thank you email.</td>
+                <td class="tint">€5</td>
+                <td id="donate-button">
+                    <form method="post" action="/donate"><button type="submit">Donate</button></form>
+                </td>
+            </tr>
+            <tr>
+                <td class="tint-last-tier">Tier 2</td>
+                <td>Handwritten Thank you letter.</td>
+                <td class="tint">€10</td>
+                <td id="donate-button">
+                    <form method="post" action="/donate"><button type="submit">Donate</button></form>
+                </td>
+            </tr>
+        </tbody>        
+    </table>
     <!--footer-->
-     <footer>
+    <footer>
         <img class="logo" src="assets/PNG/Logo.png">
         <h1>Brave Shelter</h1>
         <p>Copyright information</p>
@@ -97,8 +105,8 @@
             </li>
         </ul>
     </footer>
-    
-    
+
+
 
 </body>
 
