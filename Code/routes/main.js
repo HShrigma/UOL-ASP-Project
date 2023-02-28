@@ -32,7 +32,7 @@ router.get("/article",(req,res,next)=>{
 });
 
 router.post("/adopt",(req,res,next)=>{
-  res.send("adopt");
+  res.render("adopt");
 });
 
 module.exports = router;
