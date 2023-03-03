@@ -499,20 +499,24 @@ footer>ul>li>a:hover {
 .tint-last-tier {
     background-color: #026873;
 }
-.tint-last-tier{
+
+.tint-last-tier {
     border-bottom-left-radius: inherit;
 }
-#donate-button{
+
+#donate-button {
     padding: 0%;
     height: inherit;
 }
-#donate-button>form{
-    height:100%;
+
+#donate-button>form {
+    height: 100%;
 }
-#donate-button>form>button{
+
+#donate-button>form>button {
     margin: 0px;
-    padding:1em;
-    height:100%;
+    padding: 1em;
+    height: 100%;
     text-align: center;
     border-radius: 1vmin;
     border-style: solid;
@@ -521,10 +525,80 @@ footer>ul>li>a:hover {
     color: #FFFFFF;
     border-width: 0.1em;
 }
-#donate-button>form>button:hover{
+
+#donate-button>form>button:hover {
     background-color: #038C7F;
 }
+
 /*end Donate-------------------*/
+/*Search-----------------------*/
+.search-preferences {
+    width: 100%;
+    background-color: #026873;
+}
+
+.search-preferences>form {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.search-preferences>form>div {
+    background-color: #038C8C;
+    border-radius: 1vmin;
+    padding: 1.5%;
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    text-align: center;
+    margin: 1.5%;
+}
+
+.search-preferences>form>div>label {
+    font-weight: bold;
+    font-size: 100%;
+    margin-bottom: 3.5%;
+}
+
+.search-preferences>form>div>select {
+    border-radius: 1vmin;
+    width: 100%;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #593954;
+    background-color: #013440;
+    color: #FFFFFF;
+    text-align: center;
+    font-weight: bold;
+    font-size: 100%;
+}
+
+.search-preferences>form>div>select>option:hover {
+    background-color: #FFFFFF;
+    color: #593954;
+}
+
+.search-preferences>form>div>select>option:checked {
+    background-color: #FFFFFF;
+    color: #593954;
+}
+
+.search-preferences>form>div>button {
+    width: 100%;
+    height: 100%;
+    font-weight: bold;
+    font-size: 100%;
+    color: #FFFFFF;
+    background-color: #593954;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 1vmin;
+    border-color: #FFFFFF;
+}
+.search-preferences>form>div>button:hover {
+    background-color: #038C7F;
+}
+/*end Search-------------------*/
 
 .smallText {
     font-size: 1em;
