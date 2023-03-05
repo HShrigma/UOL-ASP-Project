@@ -6,6 +6,7 @@ const { urlencoded } = require("express");
 const { check, validationResult } = require('express-validator');
 const e = require("express");
 const { exists } = require("fs");
+const pets = require("../controllers/pets");
 let objId = 0;
 
 router.get("/",(req,res,next) =>{
@@ -26,7 +27,11 @@ router.post("/donate",(req,res,next) =>{
   res.render("donation"); 
 });
 router.get("/adopt",(req,res,next) =>{
-    res.render("adopt"); 
+    let petId = req.query.pet_id ? req.query.pet_id : 1;
+    pets.getPet(petId)
+        .then((petObject) => {
+            res.render("adopt", {pet: petObject});
+        });
 });
 
 router.get("/article",(req,res,next)=>{

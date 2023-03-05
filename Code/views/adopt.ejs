@@ -65,21 +65,28 @@
             <li>
                 <ul>
                     <li>
-                        <h3>PetName</h3>
+                        <h3><%= pet.name %></h3>
                     </li>
                     <li>
                         <div>
-                            <img src="../assets/img/dog1slides.jpg" alt="dogImage">
+                            <% if(pet.picture) { %>
+                                <img src="data:image/jpeg;base64, <%= pet.picture.toString('base64') %>" alt="dogImage">
+                            <% } else { %>
+                                <img src="../assets/img/cat1slides.jpg" alt="dogImage">
+                            <% } %>
                             <ul>
-                                <li>Age:</li>
-                                <li>Weight:</li>
-                                <li>Status:</li>
+                                <li>Type: <%= pet.type %></li>
+                                <%
+                                let ageDifMs = Date.now() - Date.parse(pet.birth);
+                                let ageDate = new Date(ageDifMs); // miliseconds from epoch
+                                let age = Math.abs(ageDate.getUTCFullYear() - 1970);
+                                %>
+                                <li>Age: <%= age %></li>
+                                <li>Weight: <%= pet.weight %>kg</li>
+                                <li>Gender: <%= pet.gender %></li>
+                                <li>Sponsorship: &euro; <%= pet.price %></li>
                                 <li class="petcontent">
-                                    Latest Update:
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae possimus
-                                        eius exercitationem cumque eligendi doloremque. Molestias repellendus voluptates
-                                        labore voluptatem reiciendis et non fuga. Facilis dolor ipsam molestiae
-                                        perspiciatis sit.</p>
+                                    <p><%= pet.description %></p>
                                 </li>
                             </ul>
 
@@ -138,7 +145,7 @@
         </ul>
     </div>
     <div class="adopt-headline">
-        <h3>Contact us to Adopt PetName</h3>
+        <h3>Contact us to Adopt <%= pet.name %></h3>
     </div>
     <form method="post" action="/adopt" class="adopt">
         

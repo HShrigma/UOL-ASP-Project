@@ -7,16 +7,32 @@ const { check, validationResult } = require('express-validator');
 const e = require("express");
 const { exists } = require("fs");
 let objId = 0;
+const pets = require("../controllers/pets");
 
 router.get("/dogs",(req,res,next) =>{
-    res.render("dogs"); 
+    let start = req.query.start ? req.query.start : 0;
+    let count = req.query.count ? req.query.count : 15;
+    pets.getPetsOfType(['Dog'], start, count)
+        .then((petlist) => {
+            res.render("cats", {petlist: petlist, showType: false});
+        });
 });  
 
 router.get("/cats",( req,res,next) =>{
-     res.render("cats"); 
+    let start = req.query.start ? req.query.start : 0;
+    let count = req.query.count ? req.query.count : 15;
+    pets.getPetsOfType(['Cat'], start, count)
+        .then((petlist) => {
+            res.render("cats", {petlist: petlist, showType: false});
+        });
 });   
   
 router.get("/other",(req,res,next) =>{
-  res.render("other"); 
+    let start = req.query.start ? req.query.start : 0;
+    let count = req.query.count ? req.query.count : 15;
+    pets.getPetsOfType(['Bird', 'Rabbit', 'Turtle'], start, count)
+        .then((petlist) => {
+            res.render("cats", {petlist: petlist, showType: true});
+        });
 });    
 module.exports = router;
