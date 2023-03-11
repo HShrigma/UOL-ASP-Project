@@ -54,15 +54,17 @@
     </nav>
     <!--Search Bar-->
     <form method="get" action="/search" class="search">
-        <input type="text" placeholder="Search..." name="search">
-        <button type="submit"><img src="../assets/icons/search.png"></button>
+        <input type="text" placeholder="Search..." name="search_value">
+        <input type="hidden" name="search_for" value="all">
+        <input type="hidden" name="search_pref" value="default">
+        <button type="submit"><img src="assets/icons/search.png"></button>
     </form>
     <!--page content -->
     <div class="search-preferences">
         <form method="get" action="/search">
             <div>
                 <label>Pet selection:</label>
-                <select name="pet-type" id="pet-type" size="4">
+                <select name="search-for" size="4">
                     <option value="all">All</option>
                     <option value="dogs">Dogs</option>
                     <option value="cats">Cats</option>
