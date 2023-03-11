@@ -10,8 +10,10 @@ const pets = require("../controllers/pets");
 let objId = 0;
 
 router.get("/",(req,res,next) =>{
-//Pet preview (see animals page ul) -> last 3 pets by id obj
-res.render("index"); 
+    var testStr = "Testing 123";
+      res.render("index",{
+        phoneNum: testStr
+      }); 
 });  
  
 router.get("/about",( req,res,next) =>{
@@ -23,8 +25,7 @@ router.get("/donate",(req,res,next) =>{
   res.render("donation", {tier: tier}); 
 });    
 router.post("/donate",(req,res,next) =>{
-  var tier = req.body.tier;
-  res.render("donation", {tier: tier}); 
+  res.render("donation", {tier: req.body.tier}); 
 });
 router.get("/adopt",(req,res,next) =>{
     let petId = req.query.pet_id ? req.query.pet_id : 1;
@@ -32,6 +33,10 @@ router.get("/adopt",(req,res,next) =>{
         .then((petObject) => {
             res.render("adopt", {pet: petObject});
         });
+});
+
+router.get("/article",(req,res,next)=>{
+    res.render("article");
 });
 
 router.post("/adopt",(req,res,next)=>{
