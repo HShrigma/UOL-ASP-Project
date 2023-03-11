@@ -57,11 +57,10 @@
         <input type="text" placeholder="Search..." name="search_value">
         <input type="hidden" name="search_for" value="all">
         <input type="hidden" name="search_pref" value="default">
+        <input type="hidden" name="samples" value="10">
         <button type="submit"><img src="assets/icons/search.png"></button>
-    </form>
-    <!--page content -->
-    <div class="search-preferences">
-        <form method="get" action="/search">
+        <!--page content -->
+        <div class="search-preferences">
             <div>
                 <label>Pet selection:</label>
                 <select name="search-for" size="4">
@@ -72,23 +71,71 @@
                 </select>
             </div>
             <div>
-                    <label>Sort by:</label>
-                    <select name="sort-by" id="sort-by" multiple>
-                        <!-- sort by birth asc/desc-->
-                        <option value="age-asc">Age ascending</option>
-                        <option value="age-des">Age descending</option>
-                        <!-- sort by id-->
-                        <option value="id-last">Most Recent</option>
-                        <option value="id-first">Oldest Admitted</option>
-                    </select>
+                <label>Sort by:</label>
+                <select name="sort-by" id="sort-by" multiple>
+                    <!-- sort by birth asc/desc-->
+                    <option value="age-asc">Age ascending</option>
+                    <option value="age-des">Age descending</option>
+                    <!-- sort by id-->
+                    <option value="id-last">Most Recent</option>
+                    <option value="id-first">Oldest Admitted</option>
+                </select>
             </div>
             <div>
-                <button type = "submit"> Apply Changes</button>
+                <button type="submit"> Apply Changes</button>
             </div>
-        </form>
+    </form>
     </div>
-    <div>
-       
+    <div class="pet-preview">
+        <ul>
+            <%
+            for(let i=0; i < petlist.length; i++) {
+                let pet = petlist[i];
+            %>
+                <li>
+                    <ul>
+                        <li>
+                            <h3><%= pet.name %></h3>
+                        </li>
+                        <li>
+                            <div>
+                                <% if(pet.picture) { %>
+                                    <img src="data:image/jpeg;base64, <%= pet.picture.toString('base64') %>" alt="dogImage">
+                                <% } else { %>
+                                    <img src="../assets/img/cat1slides.jpg" alt="dogImage">
+                                <% } %>
+                                <ul>
+                                    <% if(showType) { %>
+                                        <li>Type: <%= pet.type %></li>
+                                    <% } %>
+                                    <%
+                                    let ageDifMs = Date.now() - Date.parse(pet.birth);
+                                    let ageDate = new Date(ageDifMs); // miliseconds from epoch
+                                    let age = Math.abs(ageDate.getUTCFullYear() - 1970);
+                                    %>
+                                    <li>Age: <%= age %></li>
+                                    <li>Weight: <%= pet.weight %>kg</li>
+                                    <li>Gender: <%= pet.gender %></li>
+                                    <li>Sponsorship: &euro; <%= pet.price %></li>
+                                    <li class="petcontent">
+                                        <p><%= pet.description %></p>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </li>
+                        <li>
+                            <form method="get" action="/adopt" class="adopt">
+                                <input type="hidden" name="pet_id" value="<%= pet.id %>">
+                                <button type="submit">Adopt <%= pet.name %></button>
+                            </form>
+                        </li>
+                    </ul>
+                </li>
+            <%
+            }
+            %>
+        </ul>
     </div>
 
 

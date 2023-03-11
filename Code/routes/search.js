@@ -32,6 +32,29 @@ router.get("/", (req, res, next) => {
             console.error("Search.js: search type does not exist!");
             break;
     }
-    res.render("search");
+    //*10 fixes error where every pet is repeated x10
+        let samples = Number(req.query.samples)*10;
+        console.log("samples " + samples);
+      global.db.all("SELECT DISTINCT pets.id as id, pet_types.name as type, pets.name as name, genders.name as gender, pets.birth, pets.picture," +
+      "pets.price, pets.weight, pets.description " + "FROM pets, pet_types, genders " + 
+      "WHERE (pets.name LIKE '%"+req.query.search_value+"%') OR (pets.description LIKE '%"+req.query.search_value+"%') " +
+      "LIMIT " + samples , function (err, rows) {
+        if (err) {
+            console.log("ERROR IMPORTING DRAFT");
+            next(err);
+        }
+        else {
+            let petlist = [];
+            let prevId = 0;
+            for (let index = 0; index < rows.length; index++) {
+                if(prevId != rows[index].id){
+                    petlist.push(rows[index]);
+                    prevId=rows[index].id;
+                }  
+            }
+            console.log(rows.length);
+            res.render("search", {petlist: petlist, showType: false});
+        }
+    });
 });
 module.exports = router;
