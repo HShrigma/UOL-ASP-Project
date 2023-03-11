@@ -10,9 +10,12 @@ const pets = require("../controllers/pets");
 let objId = 0;
 
 router.get("/",(req,res,next) =>{
-//Pet preview (see animals page ul) -> last 3 pets by id obj
-
-res.render("index"); 
+  let start = req.query.start ? req.query.start : 0;
+  let count = req.query.count ? req.query.count : 15;
+  pets.getPetsOfType(['Dog','Cat','Bird', 'Rabbit', 'Turtle'], start, count)
+      .then((petlist) => {
+          res.render("index", {petlist: petlist, showType: false});
+      });
 });  
  
 router.get("/about",( req,res,next) =>{
