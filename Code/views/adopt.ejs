@@ -59,7 +59,11 @@
     </form>
 
     <!--page content -->
-
+    <% if(submitted != null) { %>
+    <div class="donate-notification">
+        <h3> Thank you for your interest in adopting <%= pet.name %>! We will get back at you </h3>
+    </div>
+    <% } %>
     <div class="pet-preview">
         <ul>
             <li>
@@ -115,7 +119,7 @@
         </div>
         <div>
             <br>
-            <button type="submit"> Send</button>
+            <button type="submit" name="submitted" value="submitted"> Send</button>
         </div>
     </form>
     <!--footer-->

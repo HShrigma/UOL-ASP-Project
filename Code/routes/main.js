@@ -11,6 +11,7 @@ let objId = 0;
 
 router.get("/",(req,res,next) =>{
 //Pet preview (see animals page ul) -> last 3 pets by id obj
+
 res.render("index"); 
 });  
  
@@ -28,12 +29,16 @@ router.get("/adopt",(req,res,next) =>{
     let petId = req.query.pet_id ? req.query.pet_id : 1;
     pets.getPet(petId)
         .then((petObject) => {
-            res.render("adopt", {pet: petObject});
+            res.render("adopt", {pet: petObject, submitted: null});
         });
 });
 
 router.post("/adopt",(req,res,next)=>{
-  res.render("adopt");
+  let petId = req.body.pet_id ? req.body.pet_id : 1;
+    pets.getPet(petId)
+        .then((petObject) => {
+            res.render("adopt", {pet: petObject, submitted: req.body.submitted});
+          });
 });
 
 module.exports = router;
