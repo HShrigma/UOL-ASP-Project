@@ -10,10 +10,8 @@ const pets = require("../controllers/pets");
 let objId = 0;
 
 router.get("/",(req,res,next) =>{
-    var testStr = "Testing 123";
-      res.render("index",{
-        phoneNum: testStr
-      }); 
+//Pet preview (see animals page ul) -> last 3 pets by id obj
+res.render("index"); 
 });  
  
 router.get("/about",( req,res,next) =>{
