@@ -54,16 +54,16 @@
     </nav>
     <!--Search Bar-->
     <form method="get" action="/search" class="search">
-        <input type="text" placeholder="Search..." name="search_value">
-        <input type="hidden" name="search_for" value="all">
-        <input type="hidden" name="search_pref" value="default">
-        <input type="hidden" name="samples" value="10">
+        <input type="text" value="<%=search_value %>" name="search_value">
+        <input type="hidden" name="search_for" value="<%=search_for%>">
+        <input type="hidden" name="search_pref" value="<%=search_pref%>">
+        <input type="hidden" name="samples" value="<%= samples %>">
         <button type="submit"><img src="assets/icons/search.png"></button>
         <!--page content -->
         <div class="search-preferences">
             <div>
                 <label>Pet selection:</label>
-                <select name="search-for" size="4">
+                <select name="search_for_pref" size="4">
                     <option value="all">All</option>
                     <option value="dogs">Dogs</option>
                     <option value="cats">Cats</option>
@@ -72,14 +72,16 @@
             </div>
             <div>
                 <label>Sort by:</label>
-                <select name="sort-by" id="sort-by" multiple>
-                    <!-- sort by birth asc/desc-->
-                    <option value="age-asc">Age ascending</option>
-                    <option value="age-des">Age descending</option>
-                    <!-- sort by id-->
-                    <option value="id-last">Most Recent</option>
-                    <option value="id-first">Oldest Admitted</option>
+                <select name="sort_by" id="sort-by" multiple>
+                    <option value = "default">A-Z</option>
+                    <option value = "alpha-dsc">Z-A</option>
+                    <option value="id-asc">Most Recent</option>
+                    <option value="id-dsc">Oldest Admitted</option>
                 </select>
+            </div>
+            <div>
+                <label>Show Results:</label>
+                <input type="number" name="samples_set" value="<%=samples%>">
             </div>
             <div>
                 <button type="submit"> Apply Changes</button>
