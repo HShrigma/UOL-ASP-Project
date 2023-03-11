@@ -62,9 +62,11 @@
     <div class="donate-headline">
         <h3>Donation Tiers</h3>
     </div>
-        <h3>
-            <%=tier%>
+    <%if(tier !="none" ){ %>
+        <h3 class="donate-notification">
+            Your <%=tier%> donation was successful! Thank you!
         </h3>
+        <% } %>
             <table class="donate-table">
                 <thead>
                     <tr>
@@ -80,15 +82,39 @@
                         <td>You get a thank you email.</td>
                         <td class="tint">€5</td>
                         <td id="donate-button">
-                            <form method="post" action="/donate"><button type="submit">Donate</button></form>
+                            <form method="post" action="/donate"><button type="submit" name="tier" value="Tier 1">Donate</button></form>
                         </td>
                     </tr>
                     <tr>
-                        <td class="tint-last-tier">Tier 2</td>
+                        <td class="tint">Tier 2</td>
                         <td>Handwritten Thank you letter.</td>
                         <td class="tint">€10</td>
                         <td id="donate-button">
-                            <form method="post" action="/donate"><button type="submit">Donate</button></form>
+                            <form method="post" action="/donate"><button type="submit"name="tier" value="Tier 2">Donate</button></form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tint-last-tier">Tier 3</td>
+                        <td>Previous bonuses + puppy plushie.</td>
+                        <td class="tint">€20</td>
+                        <td id="donate-button">
+                            <form method="post" action="/donate"><button type="submit"name="tier" value="Tier 3">Donate</button></form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tint-last-tier">Tier 4</td>
+                        <td>Previous bonuses + T-Shirt.</td>
+                        <td class="tint">€50</td>
+                        <td id="donate-button">
+                            <form method="post" action="/donate"><button type="submit"name="tier" value="Tier 4">Donate</button></form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tint-last-tier">Tier 5</td>
+                        <td>Previous bonuses + Hoodie.</td>
+                        <td class="tint">€100</td>
+                        <td id="donate-button">
+                            <form method="post" action="/donate"><button type="submit"name="tier" value="Tier 5">Donate</button></form>
                         </td>
                     </tr>
                 </tbody>

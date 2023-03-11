@@ -232,9 +232,9 @@ footer>ul>li>a:hover {
 /*Content-specific classes*/
 /*  AAA text size. 
     Adapted from this course lesson 14, low level of adaptation----------*/
-/*Articles--------------------*/
+/*Articles DISCONTINUED--------------------*/
 
-.articles>ul {
+/* .articles>ul {
     list-style-type: none;
     padding: 0px;
 }
@@ -300,7 +300,7 @@ footer>ul>li>a:hover {
 
 .articles>ul>li>ul>li>form>button:hover {
     background-color: #038C7F;
-}
+} */
 
 /*end Articles----------------*/
 /*Pets------------------------*/
@@ -443,6 +443,17 @@ footer>ul>li>a:hover {
 
 /*end Adopt-------------------*/
 /*Donate-----------------------*/
+.donate-notification{
+    display: block;
+    background-color: #038C8C;
+    font-size: 100%;
+    text-align: center;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    border-radius: 2vmin;
+    border-style: solid;
+    border-width: 1vmin;
+}
 .donate-headline {
     color: #FFFFFF;
     background-color: #593954;
