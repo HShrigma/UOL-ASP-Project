@@ -1,1 +1,1 @@
-This is where the Templates for the project go. Testing fetch 
+This is where the Templates for the project go. 

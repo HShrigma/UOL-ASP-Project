@@ -30,8 +30,6 @@ router.post("/donate",(req,res,next) =>{
 });
 router.get("/adopt",(req,res,next) =>{
     let petId = req.query.pet_id ? req.query.pet_id : 1;
-    console.log(petId);
-
     pets.getPet(petId)
         .then((petObject) => {
             res.render("adopt", {pet: petObject, submitted: null});

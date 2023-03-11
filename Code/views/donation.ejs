@@ -55,7 +55,9 @@
 
     <!--Search Bar-->
     <form method="get" action="/search" class="search">
-        <input type="text" placeholder="Search..." name="search">
+        <input type="text" placeholder="Search..." name="search_value">
+        <input type="hidden" name="search_for" value="all">
+        <input type="hidden" name="search_pref" value="default">
         <button type="submit"><img src="assets/icons/search.png"></button>
     </form>
     <!--page content -->
@@ -94,7 +96,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td class="tint-last-tier">Tier 3</td>
+                        <td class="tint">Tier 3</td>
                         <td>Previous bonuses + puppy plushie.</td>
                         <td class="tint">€20</td>
                         <td id="donate-button">
@@ -102,7 +104,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td class="tint-last-tier">Tier 4</td>
+                        <td class="tint">Tier 4</td>
                         <td>Previous bonuses + T-Shirt.</td>
                         <td class="tint">€50</td>
                         <td id="donate-button">

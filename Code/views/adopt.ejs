@@ -54,7 +54,9 @@
     </nav>
     <!--Search Bar-->
     <form method="get" action="/search" class="search">
-        <input type="text" placeholder="Search..." name="search">
+        <input type="text" placeholder="Search..." name="search_value">
+        <input type="hidden" name="search_for" value="all">
+        <input type="hidden" name="search_pref" value="default">
         <button type="submit"><img src="assets/icons/search.png"></button>
     </form>
 
