@@ -27,6 +27,8 @@ router.post("/donate",(req,res,next) =>{
 });
 router.get("/adopt",(req,res,next) =>{
     let petId = req.query.pet_id ? req.query.pet_id : 1;
+    console.log(petId);
+
     pets.getPet(petId)
         .then((petObject) => {
             res.render("adopt", {pet: petObject, submitted: null});
@@ -35,6 +37,7 @@ router.get("/adopt",(req,res,next) =>{
 
 router.post("/adopt",(req,res,next)=>{
   let petId = req.body.pet_id ? req.body.pet_id : 1;
+  console.log(petId);
     pets.getPet(petId)
         .then((petObject) => {
             res.render("adopt", {pet: petObject, submitted: req.body.submitted});
