@@ -19,8 +19,7 @@ router.get("/about",( req,res,next) =>{
 });   
     
 router.get("/donate",(req,res,next) =>{
-  var tier = req.query.tier;
-  res.render("donation", {tier: tier}); 
+  res.render("donation", {tier: req.query.tier}); 
 });    
 router.post("/donate",(req,res,next) =>{
   res.render("donation", {tier: req.body.tier}); 

@@ -16,8 +16,14 @@ const searchRoutes = require('./routes/search');
 
 // DB Connection
 const sqlite3 = require('sqlite3').verbose();
-global.db = new sqlite3.Database('DB/pets.sqlite3');
-
+global.db = new sqlite3.Database('DB/pets.db',function(err){
+  if(err){
+    console.error(err);
+    process.exit(1); //Bail out we can't connect to the DB
+  }else{
+    console.log("Database connected");
+  }
+});
 //view engine Setup
 app.set("views",__dirname + "/views");
 app.set('view engine', 'ejs');

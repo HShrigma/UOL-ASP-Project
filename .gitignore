@@ -2,5 +2,3 @@ Code/node_modules
 Code/package-lock.json
 .DS_Store
 .idea
-Code/DB/pets.sqlite3
-
