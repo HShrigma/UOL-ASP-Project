@@ -23,7 +23,7 @@ router.get("/donate",(req,res,next) =>{
   res.render("donation", {tier: tier}); 
 });    
 router.post("/donate",(req,res,next) =>{
-  res.render("donation", {tier: req.query.tier}); 
+  res.render("donation", {tier: req.body.tier}); 
 });
 router.get("/adopt",(req,res,next) =>{
     let petId = req.query.pet_id ? req.query.pet_id : 1;
