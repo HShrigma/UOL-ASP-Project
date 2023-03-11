@@ -23,11 +23,7 @@ router.get("/donate",(req,res,next) =>{
   res.render("donation", {tier: tier}); 
 });    
 router.post("/donate",(req,res,next) =>{
-<<<<<<< HEAD
   res.render("donation", {tier: req.query.tier}); 
-=======
-  res.render("donation", {tier: req.body.tier}); 
->>>>>>> 97fd8da8fe88ef5f63fe0dd9e33f00a76dfd9609
 });
 router.get("/adopt",(req,res,next) =>{
     let petId = req.query.pet_id ? req.query.pet_id : 1;
