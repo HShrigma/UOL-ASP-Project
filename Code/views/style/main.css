@@ -7,6 +7,10 @@ Content Background greens/cyans - #038C8C, #038C7F
 (most)Text - #FFFFFF*/
 
 /*General: for all pages -------------*/
+h3{
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-size: 3vmin;
+}
 body {
     margin: 0;
     padding: 0;
@@ -324,6 +328,7 @@ footer>ul>li>a:hover {
     padding-bottom: 1vmin;
     text-indent: 10px;
     border-radius: 1vmin;
+    
 }
 
 .pet-preview>ul>li>ul>li>div {
